@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOREMI SOlFÁ Móveis - Sofás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <address class="ender">
+            Tv. La Donna e Mobile, 134<br>
+            Tel: (21) 91224-4881<br>
+            contato@doremisolfa.com.br
+        </address>
+        <div class="imgLogo">
+            <img src="Imagens/DoremisofaLogoTopo.png" alt="Logo Topo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="DoremisolfaMoveis.html">Apresentação</a></li>
+            <li><a href="Doremi.html">Camas</a></li>
+            <li><a href="Solfa.html">Sofás</a></li>
+            <li><a href="Encomendas.html">Encomendas</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="titulo">Seção SOlFÁ</div>
+        <table class="tabSofa">
+            <tr>
+                <th colspan="4" class="titulo">Sofás e Sofás-camas</th>
+            </tr>
+            <tr>
+                <th class="linTH">Produto</th>
+                <th class="linTH">Tipo</th>
+                <th colspan="2" class="linTH">Descrição</th>
+            </tr>
+            <tr class="linhaSofas">
+                <td rowspan="2" class="colTHH">Sofá 2 lugares</td>
+                <td><a href="#" onclick="mostrarSofa('S2LR')">Retrátil</a></td>
+                <td colspan="4" rowspan="4" class="descTab">
+                    <div id="nomeDes"></div>
+                    <div id="imgDes">
+                        <img class="imgSofaVazia" src="imagensAD2/vazio_150.png">
+                    </div>
+                    <div id="prcDes"></div>
+                </td>
+            </tr>
+            <tr class="linhaSofas">
+                <td><a href="#" onclick="mostrarSofa('S2LC')">Sofá-Cama</a></td>
+            </tr>
+            <tr class="linhaSofas">
+                <td rowspan="2" class="colTHH">Sofá 3 lugares</td>
+                <td><a href="#" onclick="mostrarSofa('S3LR')">Retrátil</a></td>
+            </tr>
+            <tr class="linhaSofas">
+                <td><a href="#" onclick="mostrarSofa('S3LRR')">Retrô</a></td>
+            </tr>
+        </table>
+        </section>
+</body>
+<script src="script.js"></script>
+</html>

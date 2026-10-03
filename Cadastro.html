@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOREMI SOlFÁ Móveis - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <address class="ender">
+            Tv. La Donna e Mobile, 134<br>
+            Tel: (21) 91224-4881<br>
+            contato@doremisolfa.com.br
+        </address>
+        <div class="imgLogo">
+            <img src="Imagens/DoremisofaLogoTopo.png" alt="Logo Topo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="DoremisolfaMoveis.html">Apresentação</a></li>
+            <li><a href="Doremi.html">Camas</a></li>
+            <li><a href="Solfa.html">Sofás</a></li>
+            <li><a href="Encomendas.html">Encomendas</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form class="FormBox">
+            <legend>Cadastro</legend>
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>       
+                <div class="titulosEnco">
+                    <label class="LabBox" for="email">Email:</label>
+                    <input class="CadEmail" id="email" type="email"><br>
+                    <br>
+                    <label class="LabBox" for="Senha">Senha:</label>
+                    <input class="CadSenha" id="Senha" type="password">
+                    <label class="LabBox" for="Senha">Confirme:</label>
+                    <input class="ConfSenha" id="Senha" type="password">
+                </div>
+                
+            </fieldset>
+            <fieldset class="FSLinhaInteira">
+                <legend>Dados Pessoais</legend>
+                <div class="LinhaForm">
+                <label class="LabBox" for="nome">Nome:</label>
+                    <input class="CadNome" id="CadNome" type="text"><br>
+                </div>
+                <div><label class="LabBox" for="enderenco">Endereço: </label>
+                    <textarea class="CadEnd"></textarea>
+                </div>
+                
+                <br>
+                    <label class="LabBox" for="CadTel">Telefone: </label>
+                    <input class="CadTel" id="CadTel" type="tel">
+                    
+                    <label class="LabBox" for="CadCell">Celular: </label>
+                    <input class="CadCell" id="CadCell" type="tel">              
+                    
+                    <div class="CadNascGen">
+                        <fieldset>
+                        <legend>Nascimento</legend>
+                         <div class="LinhaEnder">
+                            <input id="diaCadastro" name="mesValidade" value="8" class="numDD" type="number" min="1" max="31">
+                            <a class="validadeBarra"> / </a>   
+                            <input id="mesCadastro" name="mesValidade" value="8" class="numDD" type="number" min="1" max="12">
+                            <a class="validadeBarra"> / </a>                                        
+                            <input id="anoCadastro" name="anoCadastro" value="2026" class="numQD" type="number" min="1900" max="2026">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Genêro</legend>
+                         <div class="LinhaEnder">
+                            <input id="MascCad" name="MascCad" type="radio">
+                            <input id="FemCad" name="FemCad" type="radio">                                   
+                            <input id="OutroCad" name="OutroCad" type="radio">
+                        </div>
+                    </fieldset>
+                    </div>
+            </div>
+        </fieldset>     
+            
+            <div class="botoes">
+                <input type="button" value="Cadastrar">
+                <input type="button" value="Limpar">    
+            </div>
+        </form>
+    
+    </section>
+</body>
+</html>
