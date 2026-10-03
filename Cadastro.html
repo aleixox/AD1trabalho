@@ -33,10 +33,10 @@
                     <label class="LabBox" for="email">Email:</label>
                     <input class="CadEmail" id="email" type="email"><br>
                     <br>
-                    <label class="LabBox" for="Senha">Senha:</label>
-                    <input class="CadSenha" id="Senha" type="password">
-                    <label class="LabBox" for="Senha">Confirme:</label>
-                    <input class="ConfSenha" id="Senha" type="password">
+                    <label class="LabBox" for="CadSenha">Senha:</label>
+                    <input class="CadSenha" id="CadSenha" type="password" required>
+                    <label class="LabBox" for="ConfSenha">Confirme:</label>
+                    <input class="ConfSenha" id="ConfSenha" type="password" required>
                 </div>
                 
             </fieldset>
@@ -46,19 +46,21 @@
                 <label class="LabBox" for="nome">Nome:</label>
                     <input class="CadNome" id="CadNome" type="text"><br>
                 </div>
-                <div><label class="LabBox" for="enderenco">Endereço: </label>
+                <div><label class="LabBox" for="CadEnd">Endereço: </label>
                     <textarea class="CadEnd"></textarea>
                 </div>
                 
-                <br>
+                <br><br>
+                    <div class="LinhaForm">
                     <label class="LabBox" for="CadTel">Telefone: </label>
                     <input class="CadTel" id="CadTel" type="tel">
                     
                     <label class="LabBox" for="CadCell">Celular: </label>
-                    <input class="CadCell" id="CadCell" type="tel">              
+                    <input class="CadCell" id="CadCell" type="tel">    
+                    </div> <br>         
                     
                     <div class="CadNascGen">
-                        <fieldset>
+                        <fieldset class="FSColNasc">
                         <legend>Nascimento</legend>
                          <div class="LinhaEnder">
                             <input id="diaCadastro" name="mesValidade" value="8" class="numDD" type="number" min="1" max="31">
@@ -69,12 +71,12 @@
                         </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="FSColGen">
                         <legend>Genêro</legend>
-                         <div class="LinhaEnder">
-                            <input id="MascCad" name="MascCad" type="radio">
-                            <input id="FemCad" name="FemCad" type="radio">                                   
-                            <input id="OutroCad" name="OutroCad" type="radio">
+                         <div>
+                            <input id="MascCad" value="MascCad" name="GenBtt" type="radio"><a>Masc</a>
+                            <input id="FemCad" value="FemCad" name="GenBtt" type="radio"><a>Fem</a>                                   
+                            <input id="OutroCad" value="OutroCad" name="GenBtt" type="radio"><a>Outro</a>
                         </div>
                     </fieldset>
                     </div>
@@ -82,11 +84,12 @@
         </fieldset>     
             
             <div class="botoes">
-                <input type="button" value="Cadastrar">
+                <input type="button" value="Cadastrar" onclick="confirmaSenhas()">
                 <input type="button" value="Limpar">    
             </div>
         </form>
     
     </section>
 </body>
+<script src="script.js"></script>
 </html>

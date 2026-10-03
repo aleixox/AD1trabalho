@@ -223,9 +223,22 @@ nav ul {
     float: left;
 }
 
+.FSColNasc{
+    width: 200px;
+    text-align: center;
+    float: left;
+}
+
 .FSColDir{
     width: 210px;
     text-align: center;
+    float: right;
+}
+.FSColGen{
+    width: 170px;
+    font-size: 10px;
+    align-items: center;
+    text-align: left;
     float: right;
 }
 
@@ -362,17 +375,18 @@ nav ul {
     float: left;
     display: block;
 }
-.CadSenha{
+.CadSenha, .CadTel{
     width: 110px;
     float: left;
     display: block;
 }
 
-.ConfSenha{
+.ConfSenha, .CadCell{
     width: 110px;
     float: right;
     display: block;
 }
+
 .idEmail{
     width: 160px;
     float: left;

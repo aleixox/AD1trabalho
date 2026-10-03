@@ -75,3 +75,17 @@ function mostrarSofa(idProduto) {
         `;
     }
 }
+
+function confirmaSenhas() {
+    
+    const senha = document.getElementById("CadSenha").value;
+    const confirmarSenha = document.getElementById("ConfSenha").value;
+
+
+    if (senha !== confirmarSenha) {
+        alert("Senhas estão diferentes!");
+        return false;
+    }
+    
+    return true;
+}
