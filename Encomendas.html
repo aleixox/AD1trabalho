@@ -47,27 +47,27 @@
                 <select class="lisSelProd">
                     <option selected value="none">Selecione um item</option>
                     <optgroup label="Cama Solteiro">
-                        <option label="Simples 104 x 104 x 202">Simples 104 x 104 x 202</option>
-                        <option label="Bicama 70 x 87 x 193">Bicama 70 x 87 x 193</option>
+                        <option id="CSS" label="Simples 104 x 104 x 202">Simples 104 x 104 x 202</option>
+                        <option id="CSB" label="Bicama 70 x 87 x 193">Bicama 70 x 87 x 193</option>
                     </optgroup>
                     <optgroup label="Cama Casal">
-                        <option label="Simples 108 x 154 x 210">Simples 108 x 154 x 210</option>
-                        <option label="Com gavetas 45 x 145 x 195">Com gavetas 45 x 145 x 195</option>
+                        <option id="CCS" label="Simples 108 x 154 x 210">Simples 108 x 154 x 210</option>
+                        <option id="CCG" label="Com gavetas 45 x 145 x 195">Com gavetas 45 x 145 x 195</option>
                     </optgroup>
                     <optgroup label="Sofá 2 lug.">
-                        <option label="Retrátil 95 x 87-126 x 180 Linho Cru">Retrátil 95 x 87-126 x 180 Linho Cru</option>
-                        <option label="Sofá-cama 95 x 97-150 x 180 Linho">Sofá-cama 95 x 97-150 x 180 Linho</option>
+                        <option id="S2LR" label="Retrátil 95 x 87-126 x 180 Linho Cru">Retrátil 95 x 87-126 x 180 Linho Cru</option>
+                        <option id="S2LC" label="Sofá-cama 95 x 97-150 x 180 Linho">Sofá-cama 95 x 97-150 x 180 Linho</option>
                     </optgroup>
                     <optgroup label="Sofá 3 lug.">
-                        <option label="Retrátil 108 x 95-155 x 200 Suede">Retrátil 108 x 95-155 x 200 Suede</option>
-                        <option label="Retrô 80 x 76 x 196 Veludo">Retrô 80 x 76 x 196 Veludo</option>
+                        <option id="S3LR" label="Retrátil 108 x 95-155 x 200 Suede">Retrátil 108 x 95-155 x 200 Suede</option>
+                        <option id="S3LRR" label="Retrô 80 x 76 x 196 Veludo">Retrô 80 x 76 x 196 Veludo</option>
                     </optgroup>
                 </select>
 
-
-                <button class="btnIncluir">Incluir</button>
+                <!-- Correção aplicada aqui com type="button" -->
+                <button type="button" class="btnIncluir">Incluir</button>
                 </div>
-                <textarea class="selProduto"></textarea>
+                <textarea id="produtoSelecionado" class="selProduto"></textarea>
                 
                 <input class="tituloValor" id="valor" type="number" step="0.01" min="0" max="9999999">
                 <label class="tituloValor" for="valor">Valor:</label>
@@ -114,4 +114,5 @@
     
     </section>
 </body>
+<script src="script.js"></script>
 </html>
